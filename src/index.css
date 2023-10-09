@@ -1,0 +1,67 @@
+*, *::before, *::after{
+  box-sizing: border-box;    
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+a
+form{
+  height: 90px;
+  display: flex;
+  align-items: center;
+  background: #FFF;
+}
+
+form input{
+  width: 51px;
+  height: 34px;
+  padding: 2px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+form button{
+  margin-left: auto;
+  margin-right: 20px;
+  padding: 13px
+}
+
+form select{
+  height: 34px;
+}
+  
+
+.color-scheme{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.color-scheme-item{
+  display: grid;
+  grid-template-rows: 300px max-content;
+  cursor: pointer;
+  text-align: center;
+}
+
+.notification {
+  display: none;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.notification-clicked{
+  display: block;
+}
+
+
+
